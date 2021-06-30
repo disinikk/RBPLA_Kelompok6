@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\sController;
+use App\Http\Controllers\SopansantunController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,3 +52,9 @@ Route::get('/menggambar', 'App\Http\Controllers\MenggambarController@menggambar'
 Route::get('/menggambar/tambahmenggambar', 'App\Http\Controllers\MenggambarController@upMenggambar');
 Route::post('/menggambar/upload', 'App\Http\Controllers\MenggambarController@upload_materi');
 Route::get('/menghitung/read/{id}', 'App\Http\Controllers\MenggambarController@read');
+
+//Route Sopan Santun
+Route::get('/sopansantun', [SopansantunController::class, 'sopansantun']);
+Route::get('/sopansantun/tambahsopansantun', [SopansantunController::class, 'tambahsopansantun']);
+Route::post('/sopansantun/upload', [SopansantunController::class, 'upload_sopansantun']);
+Route::get('/sopansantun/read/{id}', [SopansantunController::class, 'read']);

@@ -115,7 +115,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                      <a href="matapelajaran">
+                      <a href="menghitung">
                           <div class="px-4 py-5 flex-auto">
                               <div
                                   class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
@@ -136,7 +136,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                    <a href="tugas">
+                    <a href="menggambar">
                       <div class="px-4 py-5 flex-auto">
                         <div
                           class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
@@ -156,7 +156,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                    <a href="perkembangan">
+                    <a href="sopansantun">
                       <div class="px-4 py-5 flex-auto">
                         <div
                           class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
@@ -165,8 +165,7 @@
                         </div>
                         <h6 class="text-xl font-semibold">Sopan Santun</h6>
                         <p class="mt-2 mb-4 text-gray-600">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                          Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                          Berbakti kepada orang tua, menolong teman, membantu orang lain, ayo bertindak sopan santun!
                         </p>
                       </div>
                     </a>
