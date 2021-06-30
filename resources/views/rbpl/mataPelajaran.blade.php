@@ -102,10 +102,10 @@
                               >
                                   <i class="fas fa-torah"></i></i>
                               </div>
-                              <h6 class="text-xl font-semibold">Membaca</h6>
+                              <h6 class="text-xl font-semibold">Membaca dan Menulis</h6>
                               <p class="mt-2 mb-4 text-gray-600">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                                  Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                              Belajar mengeja huruf dan membaca sebuah cerita-cerita yang seru!
+                    Menulis huruf abjad tegak maupun sambung hingga menjadi kalimat!
                               </p>
                           </div>
                       </a>
@@ -131,27 +131,8 @@
                       </a>
                     </div>
                   </div>
-                  <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-                    <div
-                      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-                    >
-                      <a href="matapelajaran">
-                          <div class="px-4 py-5 flex-auto">
-                              <div
-                                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
-                              >
-                                  <i class="fas fa-torah"></i></i>
-                              </div>
-                              <h6 class="text-xl font-semibold">Menulis</h6>
-                              <p class="mt-2 mb-4 text-gray-600">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                                  Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
-                              </p>
-                          </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                  
+                  <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center ">
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
