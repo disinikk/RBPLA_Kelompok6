@@ -47,8 +47,8 @@
                   Tambah Materi Pelajaran Menggambar
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                    Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                    Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
+                    Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
                 </p>
               </div>
             </div>
