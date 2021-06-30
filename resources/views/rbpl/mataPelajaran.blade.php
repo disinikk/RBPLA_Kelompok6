@@ -124,14 +124,14 @@
                               </div>
                               <h6 class="text-xl font-semibold">Menghitung</h6>
                               <p class="mt-2 mb-4 text-gray-600">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                                  Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                                Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
+                                Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
                               </p>
                           </div>
                       </a>
                     </div>
                   </div>
-                  
+
                   <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center ">
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
