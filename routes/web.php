@@ -39,3 +39,15 @@ Route::get('/materi', [sController::class, 'index']);
 Route::get('/materi/tambah', [sController::class, 'upMateri']);
 Route::post('/materi/upload', [sController::class, 'upload_materi']);
 Route::get('/materi/read/{id}',[sController::class, 'read']);
+
+//Route Menghitung
+Route::get('/menghitung', 'App\Http\Controllers\MenghitungController@menghitung');
+Route::get('/menghitung/tambahmenghitung', 'App\Http\Controllers\MenghitungController@upMenghitung');
+Route::post('/menghitung/upload', 'App\Http\Controllers\MenghitungController@upload_materi');
+Route::get('/menghitung/read/{id}', 'App\Http\Controllers\MenghitungController@read');
+
+//Route Menggambar
+Route::get('/menggambar', 'App\Http\Controllers\MenggambarController@menggambar');
+Route::get('/menggambar/tambahmenggambar', 'App\Http\Controllers\MenggambarController@upMenggambar');
+Route::post('/menggambar/upload', 'App\Http\Controllers\MenggambarController@upload_materi');
+Route::get('/menghitung/read/{id}', 'App\Http\Controllers\MenggambarController@read');
