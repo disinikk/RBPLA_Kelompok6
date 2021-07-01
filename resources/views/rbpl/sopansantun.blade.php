@@ -44,7 +44,7 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Materi
+                  Mata Pelajaran Sopan Santun
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
@@ -77,7 +77,7 @@
 
       <div class="container mx-auto px-16">
 
-        <a href="/materi/tambah">
+        <a href="sopansantun/tambahsopansantun">
             <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
                 >
             Tambah Materi

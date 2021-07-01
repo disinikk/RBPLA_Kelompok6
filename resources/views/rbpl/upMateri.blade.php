@@ -44,7 +44,7 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Tambah Materi Pelajaran Menggambar
+                  Tambah Materi Pelajaran Membaca dan Menulis
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
