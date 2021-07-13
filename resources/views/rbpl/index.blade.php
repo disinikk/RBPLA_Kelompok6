@@ -137,6 +137,22 @@
             </div>
          </div>
         </section>
+        <footer style="height: 200px" class="flex flex-col items-center justify-center">
+            <div class="flex flex-row items-center mb-5">
+                <img
+                        alt="..."
+                        src="./img/s.jpg"
+                        class="rounded-full"
+                        style="max-height:75px; max-width: 75px;"
+                        />
+                <p class="text-black font-semibold text-4xl ml-2">
+                    SIPETAK
+                </p>
+            </div>
+            <p class="inline-block text-gray-600">
+                Ahmad Faiq | Zuhdi Afi | Aulia Fahmi | Fauzi Anwar | Andre Hanafi
+            </p>
+        </footer>
 
     </x-app-layout>
     </body>
