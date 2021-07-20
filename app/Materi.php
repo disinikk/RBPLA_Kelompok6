@@ -8,5 +8,5 @@ class Materi extends Model
 {
     protected $table = "materi";
 
-    protected $fillable = ['file','deskripsi','judul'];
+    protected $fillable = ['file','deskripsi','judul','mapel'];
 }

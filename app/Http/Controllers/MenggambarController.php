@@ -11,16 +11,16 @@ class MenggambarController extends Controller
 
     public function menggambar()
     {
-    	$materi = DB::table('materi')->paginate(10);
+    	$materi = DB::table('materi')->where('mapel',3)->paginate(10);
 
-    	return view('rbpl.menggambar',['materi' => $materi]);
+    	return view('guru.menggambar',['materi' => $materi]);
 
     }
 
     public function upMenggambar()
     {
 		$materi = Materi::get();
-		return view('rbpl.upMenggambar',['materi' => $materi]);
+		return view('guru.upMenggambar',['materi' => $materi]);
 	}
 
     public function upload_materi(Request $request)
@@ -44,7 +44,8 @@ class MenggambarController extends Controller
 		Materi::create([
 			'file' => $nama_file,
 			'deskripsi' => $request->deskripsi,
-            'judul' => $request->judul
+            'judul' => $request->judul,
+            'mapel' => 3
 		]);
 
 		return redirect()->back();
@@ -53,7 +54,12 @@ class MenggambarController extends Controller
     public function read($id)
     {
         $materi = DB::table('materi')-> where('id',$id)->get();
-        return view('rbpl.read',['materi' => $materi]);
+        return view('guru.read',['materi' => $materi]);
     }
 
+    public function hapus($id)
+    {
+	DB::table('materi')->where('id',$id)->delete();
+	return redirect('/menggambar');
+    }
 }

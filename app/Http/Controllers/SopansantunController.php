@@ -12,17 +12,17 @@ class SopansantunController extends Controller
     public function sopansantun()
     {
     	// mengambil data dari table pesanan
-        $materi = DB::table('materi')->paginate(10);
+        $materi = DB::table('materi')->where('mapel',4)->paginate(10);
 
     	// mengirim data pendapatan ke view index
-        return view('rbpl.sopansantun', ['materi' => $materi]);
+        return view('guru.sopansantun', ['materi' => $materi]);
     }
 
     public function tambahsopansantun()
     {
    // memanggil view tambah
        $materi = Materi::get();
-       return view('rbpl.tambahsopansantun',['materi' => $materi]);
+       return view('guru.tambahsopansantun',['materi' => $materi]);
    }
 
    public function upload_sopansantun(Request $request)
@@ -46,7 +46,8 @@ class SopansantunController extends Controller
        Materi::create([
            'file' => $nama_file,
            'deskripsi' => $request->deskripsi,
-           'judul' => $request->judul
+           'judul' => $request->judul,
+           'mapel' => 4
        ]);
 
        return redirect()->back();
@@ -55,6 +56,11 @@ class SopansantunController extends Controller
    public function read($id)
     {
         $materi = DB::table('materi')-> where('id',$id)->get();
-        return view('rbpl.readsopansantun',['materi' => $materi]);
+        return view('guru.readsopansantun',['materi' => $materi]);
+    }
+    public function hapus($id)
+    {
+	DB::table('materi')->where('id',$id)->delete();
+	return redirect('/sopansantun');
     }
 }

@@ -10,16 +10,16 @@ class MenghitungController extends Controller
 {
     public function menghitung()
     {
-    	$materi = DB::table('materi')->paginate(10);
+    	$materi = DB::table('materi')->where('mapel',2)->paginate(10);
 
-    	return view('rbpl.menghitung',['materi' => $materi]);
+    	return view('guru.menghitung',['materi' => $materi]);
 
     }
 
     public function upMenghitung()
     {
 		$materi = Materi::get();
-		return view('rbpl.upMenghitung',['materi' => $materi]);
+		return view('guru.upMenghitung',['materi' => $materi]);
 	}
 
     public function upload_materi(Request $request)
@@ -43,7 +43,8 @@ class MenghitungController extends Controller
 		Materi::create([
 			'file' => $nama_file,
 			'deskripsi' => $request->deskripsi,
-            'judul' => $request->judul
+            'judul' => $request->judul,
+            'mapel' => 2
 		]);
 
 		return redirect()->back();
@@ -52,6 +53,11 @@ class MenghitungController extends Controller
     public function read($id)
     {
         $materi = DB::table('materi')-> where('id',$id)->get();
-        return view('rbpl.read',['materi' => $materi]);
+        return view('guru.read',['materi' => $materi]);
+    }
+    public function hapus($id)
+    {
+	DB::table('materi')->where('id',$id)->delete();
+	return redirect('/menghitung');
     }
 }
