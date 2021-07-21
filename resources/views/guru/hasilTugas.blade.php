@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Materi</title>
+    <title>Hasil Tugas</title>
   </head>
 
 
@@ -44,11 +44,11 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Materi Pelajaran Menghitung
+                  Hasil Tugas
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
-                    Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
+                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
+                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
                 </p>
               </div>
             </div>
@@ -76,8 +76,6 @@
       </div>
 
       <div class="container mx-auto px-16">
-
-
         <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -86,7 +84,10 @@
                     <thead class="bg-gray-50">
                       <tr>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Nama Materi
+                          Nama Tugas
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          Nama Murid
                         </th>
                         <th scope="col" class="relative px-6 py-3">
                           <span class="sr-only">Edit</span>
@@ -95,19 +96,26 @@
                     </thead>
 
                     <tbody class="bg-white divide-y divide-gray-200">
-                        @foreach($materi as $m)
+                        @foreach($tugas as $t)
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <div class="ml-4">
                                     <div class="text-sm font-medium text-gray-900">
-                                        {{ $m->judul }}
+                                        {{ $t->judul }}
                                     </div>
                                     </div>
                                 </div>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <a href="/menghitungmurid/read/{{ $m->id }}" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                                    <div class='flex items-end'>
+                                        {{ $t->nama}}
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <a href="/tugas/readhasil/{{ $t->id }}" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                                |
+                                <a href="/tugas/hapushasil/{{ $t->id }}" class="text-indigo-600 hover:text-indigo-900">Hapus</a>
                                 </td>
                             </tr>
                         @endforeach

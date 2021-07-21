@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Tambah Materi</title>
+    <title>Tambah Tugas</title>
   </head>
 
 
@@ -44,11 +44,11 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Tambah Materi Pelajaran Menghitung
+                  Kumpulkan Tugas
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
-                    Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
+                    Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="container mx-auto px-16">
-        <form action="/menghitung/upload" method="POST" enctype="multipart/form-data">
+        <form action="/tugasmurid/upload/{{$id}}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <br/>
             @if(count($errors) > 0)
@@ -88,8 +88,8 @@
 			@endif
 
             <div class="mb-3 pt-0">
-                <label for="judul">Judul Materi:</label>
-                <input type="text" placeholder="Isi Judul disini" id="judul" name="judul" required="required" class="form-control px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"/>
+                <label for="nama">Nama:</label>
+                <input type="text" placeholder="Isi Namamu disini" id="nama" name="nama" required="required" class="form-control px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"/>
             </div>
 
             <div class="mb-3 pt-0">

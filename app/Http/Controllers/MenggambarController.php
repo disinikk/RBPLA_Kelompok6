@@ -62,4 +62,23 @@ class MenggambarController extends Controller
 	DB::table('materi')->where('id',$id)->delete();
 	return redirect('/menggambar');
     }
+
+
+
+
+    //Controller Murid
+
+    public function menggambarMurid()
+    {
+    	$materi = DB::table('materi')->where('mapel',3)->paginate(10);
+
+    	return view('murid.menggambar',['materi' => $materi]);
+
+    }
+
+    public function readMurid($id)
+    {
+        $materi = DB::table('materi')-> where('id',$id)->get();
+        return view('murid.read',['materi' => $materi]);
+    }
 }

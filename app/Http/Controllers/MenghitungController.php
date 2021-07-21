@@ -60,4 +60,22 @@ class MenghitungController extends Controller
 	DB::table('materi')->where('id',$id)->delete();
 	return redirect('/menghitung');
     }
+
+    //Controller murid
+
+
+    public function menghitungMurid()
+    {
+    	$materi = DB::table('materi')->where('mapel',2)->paginate(10);
+
+    	return view('murid.menghitung',['materi' => $materi]);
+
+    }
+
+    public function readMurid($id)
+    {
+        $materi = DB::table('materi')-> where('id',$id)->get();
+        return view('murid.read',['materi' => $materi]);
+    }
+
 }

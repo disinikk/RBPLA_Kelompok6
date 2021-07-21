@@ -23,10 +23,10 @@ class SopansantunController extends Controller
    // memanggil view tambah
        $materi = Materi::get();
        return view('guru.tambahsopansantun',['materi' => $materi]);
-   }
+    }
 
-   public function upload_sopansantun(Request $request)
-   {
+    public function upload_sopansantun(Request $request)
+    {
        $this->validate($request, [
            'file' => 'required|file|image|mimes:png,jpg,jpeg|max:2048',
            'judul' => 'required',
@@ -63,4 +63,21 @@ class SopansantunController extends Controller
 	DB::table('materi')->where('id',$id)->delete();
 	return redirect('/sopansantun');
     }
+
+    //Controller murid
+
+    public function sopansantunMurid()
+    {
+    	// mengambil data dari table pesanan
+        $materi = DB::table('materi')->where('mapel',4)->paginate(10);
+
+    	// mengirim data pendapatan ke view index
+        return view('murid.sopansantun', ['materi' => $materi]);
+    }
+
+        public function readMurid($id)
+        {
+            $materi = DB::table('materi')-> where('id',$id)->get();
+            return view('murid.readsopansantun',['materi' => $materi]);
+        }
 }

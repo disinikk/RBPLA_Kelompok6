@@ -95,7 +95,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                      <a href="materi">
+                      <a href="materimurid">
                           <div class="px-4 py-5 flex-auto">
                               <div
                                   class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
@@ -115,7 +115,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                      <a href="menghitung">
+                      <a href="menghitungmurid">
                           <div class="px-4 py-5 flex-auto">
                               <div
                                   class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
@@ -136,7 +136,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                    <a href="menggambar">
+                    <a href="menggambarmurid">
                       <div class="px-4 py-5 flex-auto">
                         <div
                           class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
@@ -156,7 +156,7 @@
                     <div
                       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                    <a href="sopansantun">
+                    <a href="sopansantunmurid">
                       <div class="px-4 py-5 flex-auto">
                         <div
                           class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"

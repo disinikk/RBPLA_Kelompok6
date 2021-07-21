@@ -87,9 +87,9 @@
                 </p>
             </div>
 
-            <div class="flex items-center">
-                <div class="ml-4">
-                    <div class="w-6/12 sm:w-4/12 px-4">
+            <div class="flex place-content-center">
+                <div >
+                    <div class="max-w-screen-lg">
                         <img src="{{ asset('data_file/' . $m->file) }}" alt="">
                     </div>
                 </div>

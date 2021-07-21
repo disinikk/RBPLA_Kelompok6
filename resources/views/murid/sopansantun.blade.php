@@ -77,13 +77,6 @@
 
       <div class="container mx-auto px-16">
 
-        <a href="sopansantun/tambahsopansantun">
-            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
-                >
-            Tambah Materi
-            </button>
-        </a>
-
 
         <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -114,7 +107,7 @@
                                 </div>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <a href="/sopansantun/read/{{ $m->id }}" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                                <a href="/sopansantunmurid/read/{{ $m->id }}" class="text-indigo-600 hover:text-indigo-900">Detail</a>
                                 </td>
                             </tr>
                         @endforeach

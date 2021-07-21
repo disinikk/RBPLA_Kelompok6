@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Tambah Materi Sopan Santun</title>
+    <title>Tugas</title>
   </head>
 
 
@@ -44,7 +44,7 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Tambah Materi Sopan Santun
+                  Tugas
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
@@ -75,41 +75,35 @@
         </div>
       </div>
 
-      <div class="container mx-auto px-16">
-        <form action="/sopansantun/upload" method="POST" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            <br/>
-            @if(count($errors) > 0)
-				<div class="alert alert-danger">
-					@foreach ($errors->all() as $error)
-					{{ $error }} <br/>
-					@endforeach
-				</div>
-			@endif
 
-            <div class="mb-3 pt-0">
-                <label for="judul">Judul Materi:</label>
-                <input type="text" placeholder="Isi Judul disini" id="judul" name="judul" required="required" class="form-control px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"/>
+            @foreach($tugas as $t)
+            <div class="px-4 py-5 flex-auto ml-64">
+                <a href="/tugasmurid/tambah/{{ $t->id }}">
+                    <button class="bg-red-500 place-content-end text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                        >
+                    Kumpulkan Tugas
+                    </button>
+                </a>
+                <br/><br/>
+                <h5 class="text-xl font-bold">{{ $t->judul }}</h5>
+                <h6 class="text-xl font-semibold"> Deadline : {{ $t->deadline }}</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                    <img src="{{ $t->file }}" alt="">
+                    {{ $t->deskripsi }}
+
+                </p>
             </div>
 
-            <div class="mb-3 pt-0">
-                <label for="deskripsi">Deskripsi:</label>
-                <input type="text" placeholder="Isi Deskripsi disini" id="deskripsi" name="deskripsi" required="required" class="form-control px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"/>
+            <div class="flex place-content-center">
+                <div >
+                    <div class="max-w-screen-lg">
+                        <img src="{{ asset('data_file/' . $t->file) }}" alt="">
+                    </div>
+                </div>
             </div>
+            @endforeach
 
-            <div class="form-group">
-                <b>File</b><br/>
-                <input type="file" name="file">
-            </div>
-
-            <br/>
-
-            <input type="submit" class="bg-blueGray-500 text-white active:bg-blueGray-700 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-
-
-        </form>
-
-      </div>
+        </div>
 
 
 

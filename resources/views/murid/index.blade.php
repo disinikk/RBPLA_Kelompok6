@@ -79,7 +79,7 @@
               <div
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
               >
-                <a href="matapelajaran">
+                <a href="matapelajaranmurid">
                     <div class="px-4 py-5 flex-auto">
                         <div
                             class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
@@ -99,7 +99,7 @@
               <div
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
               >
-              <a href="tugas">
+              <a href="tugasmurid">
                 <div class="px-4 py-5 flex-auto">
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
