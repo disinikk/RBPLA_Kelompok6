@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 use App\Materi;
 use App\Tugas;
 use App\HasilTugas;
+use App\Perkembangan;
 
 class sController extends Controller
 {
@@ -61,8 +63,8 @@ class sController extends Controller
 
     public function hapusMateri($id)
     {
-	DB::table('materi')->where('id',$id)->delete();
-	return redirect('/materi');
+        DB::table('materi')->where('id',$id)->delete();
+        return redirect('/materi');
     }
 
 
@@ -122,6 +124,7 @@ class sController extends Controller
         $tugas = DB::table('tugas')-> where('id',$id)->get();
         return view('guru.readTugas',['tugas' => $tugas]);
     }
+
     public function readTugasHasil($id)
     {
         $tugas = DB::table('hasil_tugas')-> where('id',$id)->get();
@@ -130,13 +133,68 @@ class sController extends Controller
 
     public function hapusTugas($id)
     {
-	DB::table('tugas')->where('id',$id)->delete();
-	return redirect('/tugas');
+        DB::table('tugas')->where('id',$id)->delete();
+        return redirect('/tugas');
+        }
+        public function hapusTugasHasil($id)
+        {
+        DB::table('hasil_tugas')->where('id',$id)->delete();
+        return redirect('/tugas/hasil');
     }
-    public function hapusTugasHasil($id)
+
+    public function perkembangan()
     {
-	DB::table('hasil_tugas')->where('id',$id)->delete();
-	return redirect('/tugas/hasil');
+    	$perkembangan = DB::table('perkembangan_siswa')->paginate(10);
+
+    	return view('guru.perkembangan',['perkembangan' => $perkembangan]);
+
+    }
+
+    public function upPerkembangan()
+    {
+		$perkembangan = Perkembangan::get();
+        $user = DB::table('users')->get();
+		return view('guru.upPerkembangan',['perkembangan' => $perkembangan, 'user' =>$user]);
+	}
+
+    public function upload_perkembangan(Request $request)
+    {
+		$this->validate($request, [
+			'file' => 'file|image|mimes:png,jpg,jpeg|max:2048',
+            'idMurid' => 'required',
+			'isi' => 'required'
+		]);
+
+        $tanggal = date('Y-m-d');
+        $user = DB::table('users')->select('name')->where('id',$request->idMurid)->value('name');
+        $file = $request->file('file');
+        $nama_file= $file;
+		$tujuan_upload = 'data_file';
+        if ($file != null){
+            $nama_file = time()."_".$file->getClientOriginalName();
+		    $file->move($tujuan_upload,$nama_file);
+        }
+		Perkembangan::create([
+			'file' => $nama_file,
+			'isi' => $request->isi,
+            'nama' => $user,
+            'tanggal' => $tanggal,
+            'idMurid' => $request->idMurid
+		]);
+
+		return redirect()->back();
+	}
+
+    public function readPerkembangan($id)
+    {
+        $perkembangan = DB::table('perkembangan_siswa')-> where('id',$id)->get();
+        return view('guru.readPerkembangan',['perkembangan' => $perkembangan]);
+    }
+
+    public function hapusPerkembangan($id)
+    {
+        DB::table('perkembangan_siswa')->where('id',$id)->delete();
+        return redirect('/perkembangan');
     }
 
 
@@ -200,6 +258,21 @@ class sController extends Controller
     {
         $tugas = DB::table('tugas')-> where('id',$id)->get();
         return view('murid.readTugas',['tugas' => $tugas]);
+    }
+
+    public function perkembanganMurid()
+    {
+        $user = Auth::id();
+    	$perkembangan = DB::table('perkembangan_siswa')->where('idMurid',$user) ->paginate(10);
+
+    	return view('murid.perkembangan',['perkembangan' => $perkembangan]);
+
+    }
+
+    public function readPerkembanganMurid($id)
+    {
+        $perkembangan = DB::table('perkembangan_siswa')-> where('id',$id)->get();
+        return view('murid.readPerkembangan',['perkembangan' => $perkembangan]);
     }
 
 }

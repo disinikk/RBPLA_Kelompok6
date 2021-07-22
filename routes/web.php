@@ -84,6 +84,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     Route::get('/tugas/hapus/{id}',[sController::class, 'hapusTugas']);
     Route::get('/tugas/hapushasil/{id}',[sController::class, 'hapusTugasHasil']);
 
+    //Route Perkembangan Siswa
+    Route::get('/perkembangan', [sController::class, 'perkembangan']);
+    Route::get('/perkembangan/tambah', [sController::class, 'upPerkembangan']);
+    Route::post('/perkembangan/upload', [sController::class, 'upload_perkembangan']);
+    Route::get('/perkembangan/read/{id}',[sController::class, 'readPerkembangan']);
+    Route::get('/perkembangan/hapus/{id}',[sController::class, 'hapusPerkembangan']);
+
 
     //User: Murid
     Route::get('indexmurid',function(){
@@ -125,3 +132,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     Route::get('/tugasmurid/tambah/{id}', [sController::class, 'upTugasMurid']);
     Route::post('/tugasmurid/upload/{id}', [sController::class, 'upload_tugasMurid']);
     Route::get('/tugasmurid/read/{id}',[sController::class, 'readTugasMurid']);
+
+    //Route Perkembangan Siswa
+    Route::get('/perkembanganmurid', [sController::class, 'perkembanganMurid']);
+    Route::get('/perkembanganmurid/read/{id}',[sController::class, 'readPerkembanganMurid']);
