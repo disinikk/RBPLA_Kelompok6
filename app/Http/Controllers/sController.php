@@ -12,7 +12,6 @@ use App\Perkembangan;
 
 class sController extends Controller
 {
-
     public function index()
     {
     	$materi = DB::table('materi')->where('mapel',1)->paginate(10);

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,17 +18,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Mata Pelajaran</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>SIPETAK</title>
+
+
   </head>
-
-
-
-
-  <body class="text-gray-800 antialiased">
+  <body>
     <x-app-layout>
         <div
         class="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -78,41 +72,45 @@
           </svg>
         </div>
       </div>
-
-      <div class="container mx-auto px-16">
-
-        <table class="auto">
-            <thead>
-            <tr>
-                <th>Nama Materi</th>
-            </tr>
-            </thead>
-            @foreach($materi as $m)
-                <tr>
-                    <td>{{ $m->judul }}</td>
-                    <td>
-                        <a href="/materi/read/{{ $m->id }}">Detail</a>
-                    </td>
-                </tr>
-                @endforeach
-        </table>
-
-      </div>
-
-
-
+    <section class="pb-20 bg-gray-300 -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <a href="tugas">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <i class="far fa-edit"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Tugas</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
+                    Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                  </p>
+                </div>
+              </a>
+              </div>
+            </div>
+         </div>
+        </div>
+    </section>
+        <footer style="height: 200px" class="flex flex-col items-center justify-center">
+            <div class="flex flex-row items-center mb-5">
+                <img
+                        alt="..."
+                        src="./img/s.jpg"
+                        class="rounded-full"
+                        style="max-height:75px; max-width: 75px;"
+                        />
+                <p class="text-black font-semibold text-4xl ml-2">
+                    SIPETAK
+                </p>
+            </div>
+            <p class="inline-block text-gray-600">
+                Ahmad Faiq | Zuhdi Afi | Aulia Fahmi | Fauzi Anwar | Andre Hanafi
+            </p>
+        </footer>
 
     </x-app-layout>
-  </body>
-
-
-
-
-
- <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-  </script>
+    </body>
 </html>

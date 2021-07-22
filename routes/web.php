@@ -3,6 +3,7 @@
 use App\Http\Controllers\MenggambarController;
 use App\Http\Controllers\sController;
 use App\Http\Controllers\SopansantunController;
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,12 +21,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-
-
+/*Route::group(['middleware'=>['auth']],function (){
+    Route::get('/dashboard',[sController::class,'home'])->name('dashboard');
+});
+require __DIR__.'/../config/auth.php';*/
 
 //User: Guru
     Route::get('index',function(){
@@ -42,7 +46,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
     Route::get('tes',function(){
-        return view('guru.tes');
+        return view('tes');
     }) -> name('tes');
 
 

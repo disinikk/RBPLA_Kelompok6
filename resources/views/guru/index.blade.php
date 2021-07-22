@@ -76,10 +76,14 @@
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <a href="matapelajaran">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                @if(Auth::user()->hasRole('admin'))
+                    <a href="matapelajaran">
+                @elseif(Auth::user()->hasRole('guru'))
+                    <a href="matapelajaran">
+                @elseif(Auth::user()->hasRole('murid'))
+                    <a href="matapelajaranmurid">
+                @endif
                     <div class="px-4 py-5 flex-auto">
                         <div
                             class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
@@ -96,30 +100,38 @@
               </div>
             </div>
             <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-              <a href="tugas">
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                  <i class="far fa-edit"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Tugas</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                    Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
-                  </p>
-                </div>
-              </a>
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                @if(Auth::user()->hasRole('admin'))
+                    <a href="tugas">
+                @elseif(Auth::user()->hasRole('guru'))
+                    <a href="tugas">
+                @elseif(Auth::user()->hasRole('murid'))
+                    <a href="tugasmurid">
+                @endif
+                    <div class="px-4 py-5 flex-auto">
+                    <div
+                        class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                    >
+                    <i class="far fa-edit"></i>
+                    </div>
+                    <h6 class="text-xl font-semibold">Tugas</h6>
+                    <p class="mt-2 mb-4 text-gray-600">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
+                        Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                    </p>
+                    </div>
+                </a>
               </div>
             </div>
             <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-              <a href="perkembangan">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                @if(Auth::user()->hasRole('admin'))
+                    <a href="perkembangan">
+                @elseif(Auth::user()->hasRole('guru'))
+                    <a href="perkembangan">
+                @elseif(Auth::user()->hasRole('murid'))
+                    <a href="perkembanganmurid">
+                @endif
                 <div class="px-4 py-5 flex-auto">
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
