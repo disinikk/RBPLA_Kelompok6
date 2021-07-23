@@ -144,7 +144,7 @@
                         </div>
                         <h6 class="text-xl font-semibold">Menggambar</h6>
                         <p class="mt-2 mb-4 text-gray-600">
-                          Belajar menggambar dan mewarnai benda-benda yang ada dalam kehidupan sehari-hari kita!
+                        Belajar menggambar dan mewarnai benda-benda yang ada dalam kehidupan sehari-hari kita!
                         </p>
                       </div>
                     </a>
