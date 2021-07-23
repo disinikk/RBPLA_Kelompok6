@@ -47,7 +47,7 @@
                   Materi Pelajaran Menghitung
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                Belajar menghitung angka seperti pertambahan, pengurangan, perkalian, dan pembagian.
+                   Marila kita menghitung , supaya kita bisa menghitung dan bisa menjadi pintar
                 </p>
               </div>
             </div>
