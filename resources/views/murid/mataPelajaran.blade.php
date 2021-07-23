@@ -124,8 +124,7 @@
                               </div>
                               <h6 class="text-xl font-semibold">Menghitung</h6>
                               <p class="mt-2 mb-4 text-gray-600">
-                                Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
-                                Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
+                                Marila kita menghitung , supaya kita bisa menghitung dan bisa menjadi pintar
                               </p>
                           </div>
                       </a>
