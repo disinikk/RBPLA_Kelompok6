@@ -47,8 +47,7 @@
                   Hasil Tugas
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
-                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
+                    Hasil tugas yang dikerjakan oleh siswa
                 </p>
               </div>
             </div>

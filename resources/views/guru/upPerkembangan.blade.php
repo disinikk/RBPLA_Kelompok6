@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Tambah Materi</title>
+    <title>Perkembangan Siswa</title>
   </head>
 
 
