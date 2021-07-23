@@ -30,7 +30,7 @@
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="/perkembangan" :active="request()->routeIs('perkembangan')">
+                    <x-jet-nav-link href="/matapelajaran" :active="request()->routeIs('matapelajaran')">
                         {{ __('Perkembangan Siswa') }}
                     </x-jet-nav-link>
                 </div>
@@ -179,7 +179,7 @@
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="/perkembanganmurid" :active="request()->routeIs('perkembanganmurid')">
+                    <x-jet-nav-link href="/matapelajaranmurid" :active="request()->routeIs('matapelajaranmurid')">
                         {{ __('Perkembangan Siswa') }}
                     </x-jet-nav-link>
                 </div>
