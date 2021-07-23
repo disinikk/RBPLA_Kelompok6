@@ -47,7 +47,7 @@
                   Tambah Materi Pelajaran Menghitung
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                Belajar menghitung angka seperti pertambahan, pengurangan, perkalian, dan pembagian.
+               Tambahkan Materi Menghitung.
                 </p>
               </div>
             </div>

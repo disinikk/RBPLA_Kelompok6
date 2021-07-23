@@ -47,7 +47,7 @@
                   Tambah Materi Sopan Santun
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    Berbakti kepada orang tua, menolong teman, membantu orang lain, ayo bertindak sopan santun!
+                    Tambahkan Materi Sopan santun.
                 </p>
               </div>
             </div>

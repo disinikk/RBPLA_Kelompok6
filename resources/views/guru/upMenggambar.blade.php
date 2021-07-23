@@ -47,7 +47,7 @@
                   Tambah Materi Pelajaran Menggambar
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                Belajar menggambar dan mewarnai benda-benda yang ada dalam kehidupan sehari-hari kita!
+                Tambahkan Materi Menggambar.
                 </p>
               </div>
             </div>
