@@ -105,7 +105,7 @@
                               <h6 class="text-xl font-semibold">Membaca dan Menulis</h6>
                               <p class="mt-2 mb-4 text-gray-600">
                               Belajar mengeja huruf dan membaca sebuah cerita-cerita yang seru!
-                    Menulis huruf abjad tegak maupun sambung hingga menjadi kalimat!
+                              Menulis huruf abjad tegak maupun sambung hingga menjadi kalimat!
                               </p>
                           </div>
                       </a>
@@ -124,8 +124,7 @@
                               </div>
                               <h6 class="text-xl font-semibold">Menghitung</h6>
                               <p class="mt-2 mb-4 text-gray-600">
-                                Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
-                                Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
+                              Belajar menghitung angka seperti pertambahan, pengurangan, perkalian, dan pembagian.
                               </p>
                           </div>
                       </a>
@@ -145,8 +144,7 @@
                         </div>
                         <h6 class="text-xl font-semibold">Menggambar</h6>
                         <p class="mt-2 mb-4 text-gray-600">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                          Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                        Belajar menggambar dan mewarnai benda-benda yang ada dalam kehidupan sehari-hari kita!
                         </p>
                       </div>
                     </a>

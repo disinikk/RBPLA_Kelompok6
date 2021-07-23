@@ -45,8 +45,7 @@
                   SIPETAK
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                    Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                Ruang Kelas Online Bagi Pembelajaran Anak Usia Dini
                 </p>
               </div>
             </div>
@@ -92,8 +91,7 @@
                         </div>
                         <h6 class="text-xl font-semibold">Mata Pelajaran</h6>
                         <p class="mt-2 mb-4 text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                            Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                            Mulai Pembelajaran Kamu Disini!
                         </p>
                     </div>
                 </a>
@@ -116,8 +114,7 @@
                     </div>
                     <h6 class="text-xl font-semibold">Tugas</h6>
                     <p class="mt-2 mb-4 text-gray-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                        Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                    Pengerjaan Tugas Bagi Anak yang Diberikan Oleh Guru
                     </p>
                     </div>
                 </a>
@@ -140,8 +137,7 @@
                   </div>
                   <h6 class="text-xl font-semibold">Perkembangan Siswa</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum ac massa sit amet venenatis.
-                    Quisque dolor ex, venenatis sed posuere a, pharetra porta lectus. Sed eget urna egestas, suscipit nulla in, pellentesque eros.
+                  Perkembangan Anak Dalam Studi yang Sudah Diambil
                   </p>
                 </div>
               </a>

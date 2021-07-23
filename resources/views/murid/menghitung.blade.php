@@ -47,8 +47,7 @@
                   Materi Pelajaran Menghitung
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    Belajar menghitung angka  supaya bisa menghitung kalian punya uang berapa !
-                    Menghitung berapa banyak mobil dan uang yang dimiliki orangtua kalian !
+                Belajar menghitung angka seperti pertambahan, pengurangan, perkalian, dan pembagian.
                 </p>
               </div>
             </div>

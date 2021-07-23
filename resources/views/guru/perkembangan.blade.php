@@ -47,8 +47,7 @@
                   Perkembangan Siswa
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
-                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
+                Perkembangan Anak Dalam Studi yang Sudah Diambil
                 </p>
               </div>
             </div>

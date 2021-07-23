@@ -47,8 +47,7 @@
                   Tugas
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
-                    fafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswosfafifuwasweswos
+                Pengerjaan Tugas Bagi Anak yang Diberikan Oleh Guru
                 </p>
               </div>
             </div>
